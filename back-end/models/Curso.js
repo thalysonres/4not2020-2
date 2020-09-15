@@ -35,4 +35,4 @@ const esquema = mongoose.Schema({
     3º -> Nome de coleção (collection) em que os objetos criados a partir do
     modelo serão armazenados no MongoDB
 */
-module.exports = mongoose.model('Curso', esquema, 'cursos')
+module.exports = mongoose.model('Curso', esquema, 'cursos');
