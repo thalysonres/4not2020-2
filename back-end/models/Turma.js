@@ -22,9 +22,9 @@ const esquema = mongoose.Schema({
     //são manipulados mais facilmente como string
     horario_inicial: { type: String, required: true},
     horario_final: { type: String, required: true},
-    curso: { type: mongoose.ObjectId, red: 'Curso', required: true},
-    professor: { type: mongoose.ObjectId, red: 'Professor', required: true},
-    sala_aula: { type: mongoose.ObjectId, red: 'SalaAula', required: true}
+    curso: { type: mongoose.ObjectId, ref: 'Curso', required: true},
+    professor: { type: mongoose.ObjectId, ref: 'Professor', required: true},
+    sala_aula: { type: mongoose.ObjectId, ref: 'SalaAula', required: true}
 })
 
 /*
